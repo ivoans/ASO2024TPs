@@ -1,0 +1,21 @@
+Tarea SIN hilos.
+ Lo que podemos notar con respecto al tiempo de ejecución es que es siempre similar, varia en los mili segundos y siempre sabemos que va a durar mas de 5 segundos ya que el segundo dura 1s y el tercero dura 4s.
+ Algún proceso que depende de la velocidad de la maquina puede ser abrir una aplicación, exportar un archivo, etc.
+ Un proceso de la vida real de naturaleza impredecible puede ser descargar un archivo.
+ 
+ 
+Tarea CON hilos
+ Si, se mejoro el tiempo de respuesta porque ahora ejecuta todos los procesos al mismo tiempo y eso hace que baje la velocidad de respuesta.
+ No, las funciones no se completan en el orden establecido, lo hacen cuando se terminan, pero si se cuenta con una maquina potente que hace que la tarea uno se termine en menos de 1s si se van a completar en el orden establecido.
+ Un escenario real donde el multi-hilado puede mejorar considerablemente el tiempo de respuesta de un sistema puede ser cuando queremos cargar varias paginas al mismo tiempo.
+ 
+ 
+ Sumador restador con RACE
+ Lo que se puede notar con respecto al tiempo de ejecucion es que va variando entre -5000 y 5000 pero casi siempre son los mismos tiempos.
+ Esto sucede por el tiempo que ejecuta cada hilo.
+ Lo podemos corregir bloqueando un hilo.
+ 
+ 
+ Sumador restador sin RACE
+ El valor final siempre da 0.
+ Con respecto al tiempo de ejecución se puede notar que es un poco mas lento.
